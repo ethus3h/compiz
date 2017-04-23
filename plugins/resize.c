@@ -70,13 +70,14 @@ struct _ResizeKeys {
 #define RESIZE_DISPLAY_OPTION_INITIATE_BUTTON	     4
 #define RESIZE_DISPLAY_OPTION_INITIATE_KEY	     5
 #define RESIZE_DISPLAY_OPTION_MODE	             6
-#define RESIZE_DISPLAY_OPTION_BORDER_COLOR           7
-#define RESIZE_DISPLAY_OPTION_FILL_COLOR             8
-#define RESIZE_DISPLAY_OPTION_NORMAL_MATCH	     9
-#define RESIZE_DISPLAY_OPTION_OUTLINE_MATCH	     10
-#define RESIZE_DISPLAY_OPTION_RECTANGLE_MATCH	     11
-#define RESIZE_DISPLAY_OPTION_STRETCH_MATCH	     12
-#define RESIZE_DISPLAY_OPTION_NUM		     13
+#define RESIZE_DISPLAY_OPTION_BORDER_THICKNESS	    7
+#define RESIZE_DISPLAY_OPTION_BORDER_COLOR           8
+#define RESIZE_DISPLAY_OPTION_FILL_COLOR             9
+#define RESIZE_DISPLAY_OPTION_NORMAL_MATCH	     10
+#define RESIZE_DISPLAY_OPTION_OUTLINE_MATCH	     11
+#define RESIZE_DISPLAY_OPTION_RECTANGLE_MATCH	     12
+#define RESIZE_DISPLAY_OPTION_STRETCH_MATCH	     13
+#define RESIZE_DISPLAY_OPTION_NUM		     14
 
 static int displayPrivateIndex;
 
@@ -1329,6 +1330,8 @@ resizePaintRectangle (CompScreen              *s,
     BoxRec        box;
     CompTransform sTransform = *transform;
 
+    RESIZE_SCREEN (s);
+
     resizeGetPaintRectangle (s->display, &box);
 
     glPushMatrix ();
@@ -1349,7 +1352,7 @@ resizePaintRectangle (CompScreen              *s,
 
     /* draw outline */
     glColor4usv (borderColor);
-    glLineWidth (2.0);
+    glLineWidth (rd->opt[RESIZE_DISPLAY_OPTION_BORDER_THICKNESS].value.i);
     glBegin (GL_LINE_LOOP);
     glVertex2i (box.x1, box.y1);
     glVertex2i (box.x2, box.y1);

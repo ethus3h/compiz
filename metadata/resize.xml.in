@@ -61,6 +61,14 @@
 		    <_name>Stretch</_name>
 		</desc>
 	    </option>
+	    <option name="border_thickness" type="float">
+		<_short>Border Thickness</_short>
+		<_long>Border Thickness</_long>
+		<default>2.0</default>
+		<min>1.0</min>
+		<max>8.0</max>
+		<precision>1.0</precision>
+	    </option>
 	    <option name="border_color" type="color">
 		<_short>Border Color</_short>
 		<_long>Border color used for outline and rectangle resize modes</_long>
