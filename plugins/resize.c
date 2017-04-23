@@ -1331,6 +1331,7 @@ resizePaintRectangle (CompScreen              *s,
     CompTransform sTransform = *transform;
 
     RESIZE_SCREEN (s);
+    RESIZE_DISPLAY (s->display);
 
     resizeGetPaintRectangle (s->display, &box);
 
