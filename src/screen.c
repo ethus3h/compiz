@@ -697,6 +697,8 @@ const CompMetadataOptionInfo coreScreenOptionInfo[COMP_SCREEN_OPTION_NUM] = {
     { "unredirect_fullscreen_windows", "bool", 0, 0, 0 },
     { "default_icon", "string", 0, 0, 0 },
     { "sync_to_vblank", "bool", 0, 0, 0 },
+    { "scaling_mode", "int", RESTOSTRING (0, SCALING_MODE_LAST), 0, 0 },
+    { "scaling_factor", "float", 0, 0, 0 },
     { "__padding__", "bool", 0, 0, 0 },
     { "detect_outputs", "bool", 0, 0, 0 },
     { "outputs", "list", "<type>string</type>", 0, 0 },
