@@ -33,8 +33,8 @@
 #include <sys/stat.h>
 #include <compiz-core.h>
 
-#define DEFAULT_PLUGINS     "ini,inotify,png,decoration,move,resize,switcher"
-#define NUM_DEFAULT_PLUGINS 7
+#define DEFAULT_PLUGINS     "core,ccp,move,resize,place,decoration,commands,text,workarounds,winrules,annotate,mousepoll,dbus,mag,wizard,extrawm,dialog,blur,crashhandler,colorfilter,notification,svg,titleinfo,regex,neg,animation,png,grid,shift,toggledeco,snow,wall,resizeinfo,obs,animationsim,fade,scale,animationaddon,expo,ezoom,staticswitcher,scalefilter,scaleaddon,opacify,group,kdecompat"
+#define NUM_DEFAULT_PLUGINS 46
 #define MAX_OPTION_LENGTH   1024
 #define HOME_OPTIONDIR     ".compiz/options"
 #define CORE_NAME           "general"
