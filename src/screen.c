@@ -697,7 +697,7 @@ const CompMetadataOptionInfo coreScreenOptionInfo[COMP_SCREEN_OPTION_NUM] = {
     { "unredirect_fullscreen_windows", "bool", 0, 0, 0 },
     { "default_icon", "string", 0, 0, 0 },
     { "sync_to_vblank", "bool", 0, 0, 0 },
-    { "scaling_mode", "int", RESTOSTRING (0, SCALING_MODE_LAST), 0, 0 },
+    { "auto_scaling", "bool", 0, 0, 0 },
     { "scaling_factor", "float", 0, 0, 0 },
     { "__padding__", "bool", 0, 0, 0 },
     { "detect_outputs", "bool", 0, 0, 0 },
@@ -2556,6 +2556,23 @@ addScreen (CompDisplay *display,
     s->filter[WINDOW_TRANS_FILTER]  = COMP_TEXTURE_FILTER_GOOD;
 
     return TRUE;
+}
+
+float getScreenScalingFactor (CompScreen *s)
+{
+    float computedScalingFactor;
+    if(s->opt[COMP_SCREEN_OPTION_AUTO_SCALING])
+    {
+	CompDisplay *d = s->display;
+	int xftdpi;
+	xftdpi = 96;
+	computedScalingFactor = (float)xftdpi / 96.0;
+    }
+    else
+    {
+	computedScalingFactor = s->opt[COMP_SCREEN_OPTION_SCALING_FACTOR].value.f;
+    }
+    return computedScalingFactor;
 }
 
 void
