@@ -31,7 +31,7 @@
 	    <option name="focus_blur_match" type="match">
 		<_short>Focus blur windows</_short>
 		<_long>Windows that should be affected by focus blur</_long>
-		<default>toolbar | menu | utility | normal | dialog | modaldialog</default>
+		<default>none</default>
 	    </option>
 	    <option name="focus_blur" type="bool">
 		<_short>Focus Blur</_short>
@@ -70,7 +70,7 @@
 	    <option name="gaussian_radius" type="int">
 		<_short>Gaussian Radius</_short>
 		<_long>Gaussian radius</_long>
-		<default>3</default>
+		<default>5</default>
 		<min>1</min>
 		<max>15</max>
 	    </option>
