@@ -8,7 +8,7 @@
 	    <option name="initiate_free_draw_button" type="button">
 		<_short>Initiate Free Draw</_short>
 		<_long>Initiate freehand drawing</_long>
-		<default>&lt;Super&gt;&lt;Alt&gt;Button1</default>
+		<default>&lt;Shift&gt;&lt;Control&gt;Button2</default>
 	    </option>
 	    <option name="initiate_line_button" type="button">
 		<_short>Initiate Line</_short>
@@ -33,12 +33,12 @@
 	    <option name="erase_button" type="button">
 		<_short>Initiate erase</_short>
 		<_long>Initiate annotate erasing</_long>
-		<default>&lt;Super&gt;&lt;Alt&gt;Button3</default>
+		<default>&lt;Shift&gt;&lt;Control&gt;&lt;Alt&gt;Button2</default>
 	    </option>
 	    <option name="clear_key" type="key">
 		<_short>Clear</_short>
 		<_long>Clear</_long>
-		<default>&lt;Super&gt;&lt;Alt&gt;k</default>
+		<default>&lt;Shift&gt;&lt;Control&gt;colon</default>
 	    </option>
 	    <option name="clear_button" type="button">
 		<_short>Clear</_short>
