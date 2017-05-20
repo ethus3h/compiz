@@ -18,7 +18,7 @@
 	    <option name="opacity" type="int">
 		<_short>Opacity</_short>
 		<_long>Opacity level of moving windows</_long>
-		<default>100</default>
+		<default>75</default>
 		<min>1</min>
 		<max>100</max>
 	    </option>
