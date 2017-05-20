@@ -10,87 +10,87 @@
 		<option name="command0" type="string">
 		    <_short>Command line 0</_short>
 		    <_long>Command line to be executed in shell when run_command0 is invoked</_long>
-		    <default></default>
+		    <default>kioclient5 exec /usr/share/applications/org.kde.dolphin.desktop</default>
 		</option>
 		<option name="command1" type="string">
 		    <_short>Command line 1</_short>
 		    <_long>Command line to be executed in shell when run_command1 is invoked</_long>
-		    <default></default>
+		    <default>kioclient5 exec /usr/share/applications/org.kde.spectacle.desktop</default>
 		</option>
 		<option name="command2" type="string">
 		    <_short>Command line 2</_short>
 		    <_long>Command line to be executed in shell when run_command2 is invoked</_long>
-		    <default></default>
+		    <default>dbus-send --dest=org.kde.Spectacle --type=method_call / org.kde.Spectacle.FullScreen boolean:true</default>
 		</option>
 		<option name="command3" type="string">
 		    <_short>Command line 3</_short>
 		    <_long>Command line to be executed in shell when run_command3 is invoked</_long>
-		    <default></default>
+		    <default>dbus-send --dest=org.kde.Spectacle --type=method_call / org.kde.Spectacle.ActiveWindow boolean:true boolean:false</default>
 		</option>
 		<option name="command4" type="string">
 		    <_short>Command line 4</_short>
 		    <_long>Command line to be executed in shell when run_command4 is invoked</_long>
-		    <default></default>
+		    <default>wmctrl -r :ACTIVE: -b toggle,maximized_vert</default>
 		</option>
 		<option name="command5" type="string">
 		    <_short>Command line 5</_short>
 		    <_long>Command line to be executed in shell when run_command5 is invoked</_long>
-		    <default></default>
+		    <default>wmctrl -c :ACTIVE:</default>
 		</option>
 		<option name="command6" type="string">
 		    <_short>Command line 6</_short>
 		    <_long>Command line to be executed in shell when run_command6 is invoked</_long>
-		    <default></default>
+		    <default>wmctrl -c :ACTIVE:</default>
 		</option>
 		<option name="command7" type="string">
 		    <_short>Command line 7</_short>
 		    <_long>Command line to be executed in shell when run_command7 is invoked</_long>
-		    <default></default>
+		    <default>wmctrl -c :ACTIVE:</default>
 		</option>
 		<option name="command8" type="string">
 		    <_short>Command line 8</_short>
 		    <_long>Command line to be executed in shell when run_command8 is invoked</_long>
-		    <default></default>
+		    <default>xte "mouseclick 3"</default>
 		</option>
 		<option name="command9" type="string">
 		    <_short>Command line 9</_short>
 		    <_long>Command line to be executed in shell when run_command9 is invoked</_long>
-		    <default></default>
+		    <default>krunner</default>
 		</option>
 		<option name="command10" type="string">
 		    <_short>Command line 10</_short>
 		    <_long>Command line to be executed in shell when run_command10 is invoked</_long>
-		    <default></default>
+		    <default>sleep 0.5; xset dpms force off</default>
 		</option>
 		<option name="command11" type="string">
 		    <_short>Command line 11</_short>
 		    <_long>Command line to be executed in shell when run_command11 is invoked</_long>
-		    <default></default>
+		    <default>wmctrl -c :ACTIVE:</default>
 		</option>
 		<option name="command12" type="string">
 		    <_short>Command line 12</_short>
 		    <_long>Command line to be executed in shell when run_command12 is invoked</_long>
-		    <default></default>
+		    <default>systemctl suspend</default>
 		</option>
 		<option name="command13" type="string">
 		    <_short>Command line 13</_short>
 		    <_long>Command line to be executed in shell when run_command13 is invoked</_long>
-		    <default></default>
+		    <default>gmusicbrowser</default>
 		</option>
 		<option name="command14" type="string">
 		    <_short>Command line 14</_short>
 		    <_long>Command line to be executed in shell when run_command14 is invoked</_long>
-		    <default></default>
+		    <default>libreoffice --writer</default>
 		</option>
 		<option name="command15" type="string">
 		    <_short>Command line 15</_short>
 		    <_long>Command line to be executed in shell when run_command15 is invoked</_long>
-		    <default></default>
+		    <default>firefox</default>
 		</option>
 		<option name="command16" type="string">
 		    <_short>Command line 16</_short>
 		    <_long>Command line to be executed in shell when run_command16 is invoked</_long>
-		    <default></default>
+		    <default>kontact</default>
 		</option>
 		<option name="command17" type="string">
 		    <_short>Command line 17</_short>
@@ -110,7 +110,7 @@
 		<option name="command20" type="string">
 		    <_short>Command line 20</_short>
 		    <_long>Command line to be executed in shell when run_command20 is invoked</_long>
-		    <default></default>
+		    <default>gnome-do</default>
 		</option>
 		<option name="command21" type="string">
 		    <_short>Command line 21</_short>
@@ -138,70 +138,87 @@
 		<option name="run_command0_key" type="key">
 		    <_short>Run command 0</_short>
 		    <_long>A keybinding that when invoked, will run the shell command identified by command0</_long>
+		    <default>F14</default>
 		</option>
 		<option name="run_command1_key" type="key">
 		    <_short>Run command 1</_short>
 		    <_long>A keybinding that when invoked, will run the shell command identified by command1</_long>
+		    <default>&lt;Shift&gt;Print</default>
 		</option>
 		<option name="run_command2_key" type="key">
 		    <_short>Run command 2</_short>
 		    <_long>A keybinding that when invoked, will run the shell command identified by command2</_long>
+		    <default>Print</default>
 		</option>
 		<option name="run_command3_key" type="key">
 		    <_short>Run command 3</_short>
 		    <_long>A keybinding that when invoked, will run the shell command identified by command3</_long>
+		    <default>&lt;Control&gt;Print</default>
 		</option>
 		<option name="run_command4_key" type="key">
 		    <_short>Run command 4</_short>
 		    <_long>A keybinding that when invoked, will run the shell command identified by command4</_long>
+		    <default>&lt;Control&gt;2</default>
 		</option>
 		<option name="run_command5_key" type="key">
 		    <_short>Run command 5</_short>
 		    <_long>A keybinding that when invoked, will run the shell command identified by command5</_long>
+		    <default>&lt;Shift&gt;&lt;Control&gt;q</default>
 		</option>
 		<option name="run_command6_key" type="key">
 		    <_short>Run command 6</_short>
 		    <_long>A keybinding that when invoked, will run the shell command identified by command6</_long>
+		    <default>&lt;Control&gt;F17</default>
 		</option>
 		<option name="run_command7_key" type="key">
 		    <_short>Run command 7</_short>
 		    <_long>A keybinding that when invoked, will run the shell command identified by command7</_long>
+		    <default>&lt;Shift&gt;&lt;Control&gt;F17</default>
 		</option>
 		<option name="run_command8_key" type="key">
 		    <_short>Run command 8</_short>
 		    <_long>A keybinding that when invoked, will run the shell command identified by command8</_long>
+		    <default>F26</default>
 		</option>
 		<option name="run_command9_key" type="key">
 		    <_short>Run command 9</_short>
 		    <_long>A keybinding that when invoked, will run the shell command identified by command9</_long>
+		    <default>&lt;Shift&gt;&lt;Control&gt;Space</default>
 		</option>
 		<option name="run_command10_key" type="key">
 		    <_short>Run command 10</_short>
 		    <_long>A keybinding that when invoked, will run the shell command identified by command10</_long>
+		    <default>&lt;Shift&gt;F1</default>
 		</option>
 		<option name="run_command11_key" type="key">
 		    <_short>Run command 11</_short>
 		    <_long>A keybinding that when invoked, will run the shell command identified by command11</_long>
+		    <default>&lt;Control&gt;q</default>
 		</option>
 		<option name="run_command12_key" type="key">
 		    <_short>Run command 12</_short>
 		    <_long>A keybinding that when invoked, will run the shell command identified by command12</_long>
+		    <default>&lt;Shift&gt;&lt;Control&gt;F14</default>
 		</option>
 		<option name="run_command13_key" type="key">
 		    <_short>Run command 13</_short>
 		    <_long>A keybinding that when invoked, will run the shell command identified by command13</_long>
+		    <default>F18</default>
 		</option>
 		<option name="run_command14_key" type="key">
 		    <_short>Run command 14</_short>
 		    <_long>A keybinding that when invoked, will run the shell command identified by command14</_long>
+		    <default>&lt;Shift&gt;&lt;Control&gt;F18</default>
 		</option>
 		<option name="run_command15_key" type="key">
 		    <_short>Run command 15</_short>
 		    <_long>A keybinding that when invoked, will run the shell command identified by command15</_long>
+		    <default>&lt;Shift&gt;&lt;Control&gt;XF86AudioPrev</default>
 		</option>
 		<option name="run_command16_key" type="key">
 		    <_short>Run command 16</_short>
 		    <_long>A keybinding that when invoked, will run the shell command identified by command16</_long>
+		    <default>&lt;Shift&gt;&lt;Control&gt;XF86AudioPause</default>
 		</option>
 		<option name="run_command17_key" type="key">
 		    <_short>Run command 17</_short>
