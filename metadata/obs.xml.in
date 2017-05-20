@@ -21,7 +21,7 @@
 		<option name="opacity_increase_button" type="button">
 		    <_short>Increase Opacity</_short>
 		    <_long>Opacity Increase</_long>
-		    <default>&lt;Alt&gt;Button4</default>
+		    <default>&lt;Control&gt;&lt;Alt&gt;Button3</default>
 		</option>
 		<option name="opacity_decrease_key" type="key">
 		    <_short>Decrease Opacity</_short>
@@ -31,7 +31,7 @@
 		<option name="opacity_decrease_button" type="button">
 		    <_short>Decrease Opacity</_short>
 		    <_long>Opacity Decrease</_long>
-		    <default>&lt;Alt&gt;Button5</default>
+		    <default>&lt;Control&gt;&lt;Alt&gt;Button1</default>
 		</option>
 	    </group>
 	    <group>
@@ -97,15 +97,15 @@
 			<_short>Windows</_short>
 			<_long>Windows that should have a different opacity by default</_long>
 			<type>match</type>
-			<default/>
+			<default>name=xvisbell</default>
 		    </option>
 		    <option name="opacity_values" type="list">
 			<_short>Window values</_short>
 			<_long>Opacity values for windows</_long>
 			<type>int</type>
-			<default/>
 			<min>0</min>
 			<max>100</max>
+			<default>75</default>
 		    </option>
 		</subgroup>
 	    </group>
