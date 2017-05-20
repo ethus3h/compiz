@@ -280,24 +280,14 @@
 		    <_long>Only perform screen updates during vertical blanking period</_long>
 		    <default>true</default>
 		</option>
-		<option name="scaling_mode" type="int">
-		    <_short>Scaling mode</_short>
-		    <_long>The Scaling options provide a value that plugins can use to multiply pixel sizes by. This is helpful for high-DPI displays.</_long>
-		    <default>0</default>
-		    <min>0</min>
-		    <max>1</max>
-		    <desc>
-			<value>0</value>
-			<_name>Autodetect (compare Xft.dpi to 96DPI design resolution)</_name>
-		    </desc>
-		    <desc>
-			<value>1</value>
-			<_name>Manual (use the value from the &quot;Scaling factor&quot; option)</_name>
-		    </desc>
+		<option name="auto_scaling" type="bool">
+		    <_short>Automatic scaling</_short>
+		    <_long>The Scaling options provide a value that plugins can use to multiply pixel sizes by. This can be autodetected by comparing Xft.dpi to 96DPI design resolution.</_long>
+		    <default>false</default>
 		</option>
 		<option name="scaling_factor" type="float">
 		    <_short>Scaling factor</_short>
-		    <_long>Scaling factor for Manual scaling mode</_long>
+		    <_long>Scaling factor (for manual scaling mode)</_long>
 		    <default>1.0</default>
 		</option>
 	    </group>
