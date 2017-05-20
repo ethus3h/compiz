@@ -294,10 +294,6 @@
 			<value>1</value>
 			<_name>Manual (use the value from the &quot;Scaling factor&quot; option)</_name>
 		    </desc>
-		    <desc>
-			<value>2</value>
-			<_name>Prefer smaller output</_name>
-		    </desc>
 		</option>
 		<option name="scaling_factor" type="float">
 		    <_short>Scaling factor</_short>
