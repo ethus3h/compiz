@@ -2563,9 +2563,18 @@ float getScreenScalingFactor (CompScreen *s)
     float computedScalingFactor;
     if(s->opt[COMP_SCREEN_OPTION_AUTO_SCALING])
     {
-	CompDisplay *d = s->display;
-	int xftdpi;
-	xftdpi = 96;
+	Display *d = s->display->display;
+	XrmDatabase *xd = XrmGetDatabase(d);
+	XrmValue *return_value;
+	char **return_type;
+	if(XrmGetResource(xd, "dpi", "Xft", return_type, return_value))
+	{
+	    xftdpi = (int)return_value;
+	}
+	else
+	{
+	    xftdpi = 96;
+	}
 	computedScalingFactor = (float)xftdpi / 96.0;
     }
     else
