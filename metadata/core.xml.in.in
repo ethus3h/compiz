@@ -39,7 +39,7 @@
 	    <option name="cursor_theme" type="string">
 		<_short>Cursor theme</_short>
 		<_long>Cursor theme name</_long>
-		<default></default>
+		<default>Wreathe-hiDPI</default>
 	    </option>
 	    <option name="cursor_size" type="int">
 		<_short>Cursor size</_short>
@@ -108,7 +108,7 @@
 		<option name="close_window_key" type="key">
 		    <_short>Close Window</_short>
 		    <_long>Close active window</_long>
-		    <default>&lt;Alt&gt;F4</default>
+		    <default>F17</default>
 		</option>
 		<option name="close_window_button" type="button">
 		    <_short>Close Window</_short>
@@ -140,7 +140,7 @@
 		<option name="minimize_window_key" type="key">
 		    <_short>Minimize Window</_short>
 		    <_long>Minimize active window</_long>
-		    <default>&lt;Alt&gt;F9</default>
+		    <default>F15</default>
 		</option>
 		<option name="minimize_window_button" type="button">
 		    <_short>Minimize Window</_short>
@@ -182,6 +182,7 @@
 		<option name="toggle_window_maximized_key" type="key">
 		    <_short>Toggle Window Maximized</_short>
 		    <_long>Toggle active window maximized</_long>
+		    <default>F16</default>
 		</option>
 		<option name="toggle_window_maximized_button" type="button">
 		    <_short>Toggle Window Maximized</_short>
@@ -212,14 +213,14 @@
 		<option name="hsize" type="int">
 		    <_short>Horizontal Virtual Size</_short>
 		    <_long>Screen size multiplier for horizontal virtual size</_long>
-		    <default>4</default>
+		    <default>2</default>
 		    <min>1</min>
 		    <max>32</max>
 		</option>
 		<option name="vsize" type="int">
 		    <_short>Vertical Virtual Size</_short>
 		    <_long>Screen size multiplier for vertical virtual size</_long>
-		    <default>1</default>
+		    <default>2</default>
 		    <min>1</min>
 		    <max>32</max>
 		</option>
@@ -288,7 +289,7 @@
 		    <_long>Level of focus stealing prevention</_long>
 		    <min>0</min>
 		    <max>4</max>
-		    <default>0</default>
+		    <default>2</default>
 		    <desc>
 			<value>0</value>
 			<_name>Off</_name>
@@ -313,7 +314,7 @@
 		<option name="focus_prevention_match" type="match">
 		    <_short>Focus Prevention Windows</_short>
 		    <_long>Focus prevention windows</_long>
-		    <default>any</default>
+		    <default>!(class=dolphin)</default>
 		</option>
 	    </group>
 	    <option name="unredirect_fullscreen_windows" type="bool">
