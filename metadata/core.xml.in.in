@@ -10,9 +10,7 @@
 		<_short>Active Plugins</_short>
 		<_long>List of currently active plugins</_long>
 		<type>string</type>
-		<default>
-		    <default_plugins/>
-		</default>
+		<default>core;ccp;move;resize;place;decoration;commands;text;workarounds;winrules;annotate;mousepoll;dbus;mag;wizard;extrawm;dialog;blur;crashhandler;colorfilter;notification;svg;titleinfo;regex;neg;animation;png;grid;shift;toggledeco;snow;wall;resizeinfo;obs;animationsim;fade;scale;animationaddon;expo;ezoom;staticswitcher;scalefilter;scaleaddon;opacify;group;kdecompat;</default>
 	    </option>
 	    <option name="audible_bell" type="bool">
 		<_short>Audible Bell</_short>
