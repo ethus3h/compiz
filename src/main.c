@@ -425,11 +425,51 @@ main (int argc, char **argv)
     /* add in default plugins if none are given */
     if (nPlugin == 0)
     {
+        plugin[nPlugin++] = "core";
         plugin[nPlugin++] = "ccp";
         plugin[nPlugin++] = "move";
         plugin[nPlugin++] = "resize";
         plugin[nPlugin++] = "place";
         plugin[nPlugin++] = "decoration";
+        plugin[nPlugin++] = "commands";
+        plugin[nPlugin++] = "text";
+        plugin[nPlugin++] = "winrules";
+        plugin[nPlugin++] = "annotate";
+        plugin[nPlugin++] = "mousepoll";
+        plugin[nPlugin++] = "dbus";
+        plugin[nPlugin++] = "mag";
+        plugin[nPlugin++] = "wizard";
+        plugin[nPlugin++] = "extrawm";
+        plugin[nPlugin++] = "dialog";
+        plugin[nPlugin++] = "blur";
+        plugin[nPlugin++] = "crashhandler";
+        plugin[nPlugin++] = "colorfilter";
+        plugin[nPlugin++] = "notification";
+        plugin[nPlugin++] = "svg";
+        plugin[nPlugin++] = "titleinfo";
+        plugin[nPlugin++] = "regex";
+        plugin[nPlugin++] = "neg";
+        plugin[nPlugin++] = "animation";
+        plugin[nPlugin++] = "png";
+        plugin[nPlugin++] = "grid";
+        plugin[nPlugin++] = "shift";
+        plugin[nPlugin++] = "toggledeco";
+        plugin[nPlugin++] = "snow";
+        plugin[nPlugin++] = "wall";
+        plugin[nPlugin++] = "resizeinfo";
+        plugin[nPlugin++] = "obs";
+        plugin[nPlugin++] = "animationsim";
+        plugin[nPlugin++] = "fade";
+        plugin[nPlugin++] = "scale";
+        plugin[nPlugin++] = "animationaddon";
+        plugin[nPlugin++] = "expo";
+        plugin[nPlugin++] = "ezoom";
+        plugin[nPlugin++] = "staticswitcher";
+        plugin[nPlugin++] = "scalefilter";
+        plugin[nPlugin++] = "scaleaddon";
+        plugin[nPlugin++] = "opacify";
+        plugin[nPlugin++] = "group";
+        plugin[nPlugin++] = "kdecompat";
     }
 
     if (refreshRateArg)
