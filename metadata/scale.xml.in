@@ -28,7 +28,9 @@
 		<option name="initiate_edge" type="edge">
 		    <_short>Initiate Window Picker</_short>
 		    <_long>Layout and start transforming windows</_long>
-		    <default></default>
+		    <default>
+			<edge name="TopRight"/>
+		    </default>
 		    <allowed edgednd="true"/>
 		</option>
 		<option name="initiate_key" type="key">
@@ -43,25 +45,15 @@
 		<option name="initiate_all_edge" type="edge">
 		    <_short>Initiate Window Picker For All Windows</_short>
 		    <_long>Layout and start transforming all windows</_long>
-		    <default>
-			<edge name="Bottom"/>
-		    </default>
 		    <allowed edgednd="true"/>
 		</option>
 		<option name="initiate_all_button" type="button">
 		    <_short>Initiate Window Picker For All Windows</_short>
 		    <_long>Layout and start transforming all windows</_long>
-		    <default>
-			<edge name="Left"/>
-			<edge name="Bottom"/>
-			<edge name="BottomLeft"/>
-			Button1
-		    </default>
 		</option>
 		<option name="initiate_all_key" type="key">
 		    <_short>Initiate Window Picker For All Windows</_short>
 		    <_long>Layout and start transforming all windows</_long>
-		    <default>F13</default>
 		</option>
 		<option name="initiate_group_edge" type="edge">
 		    <_short>Initiate Window Picker For Window Group</_short>
@@ -95,7 +87,7 @@
 		<option name="show_desktop" type="bool">
 		    <_short>Click Desktop to Show Desktop</_short>
 		    <_long>Enter Show Desktop mode when Desktop is clicked during Scale</_long>
-		    <default>false</default>
+		    <default>true</default>
 		</option>
 	    </group>
 	</display>
@@ -120,7 +112,7 @@
 		<option name="timestep" type="float">
 		    <_short>Timestep</_short>
 		    <_long>Scale timestep</_long>
-		    <default>0.1</default>
+		    <default>1.2</default>
 		    <min>0.1</min>
 		    <max>50</max>
 		    <precision>0.1</precision>
@@ -128,12 +120,12 @@
 		<option name="darken_back" type="bool">
 		    <_short>Darken Background</_short>
 		    <_long>Darken background when scaling windows</_long>
-		    <default>false</default>
+		    <default>true</default>
 		</option>
 		<option name="opacity" type="int">
 		    <_short>Opacity</_short>
 		    <_long>Amount of opacity in percent</_long>
-		    <default>90</default>
+		    <default>75</default>
 		    <min>0</min>
 		    <max>100</max>
 		</option>
