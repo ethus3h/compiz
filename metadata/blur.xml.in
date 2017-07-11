@@ -72,7 +72,7 @@
 		<_long>Gaussian radius</_long>
 		<default>3</default>
 		<min>1</min>
-		<max>15</max>
+		<max>128</max>
 	    </option>
 	    <option name="gaussian_strength" type="float">
 		<_short>Gaussian Strength</_short>
