@@ -35,7 +35,7 @@
 
 static CompMetadata blurMetadata;
 
-#define BLUR_GAUSSIAN_RADIUS_MAX 15
+#define BLUR_GAUSSIAN_RADIUS_MAX 128
 
 #define BLUR_FILTER_4X_BILINEAR 0
 #define BLUR_FILTER_GAUSSIAN    1
